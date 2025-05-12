@@ -1,0 +1,21 @@
+{
+    "facebook": {
+        "groups": [
+            "https://www.facebook.com/groups/yourgroup1",
+            "https://www.facebook.com/groups/yourgroup2"
+        ],
+        "pollIntervalMinutes": 10
+    },
+    "keywords": [
+        "jual akun",
+        "COC",
+        "COD"
+    ],
+    "priceRange": {
+        "min": 100000,
+        "max": 2000000
+    },
+    "telegram": {
+        "chatId": "@telefbook_bot"
+    }
+}

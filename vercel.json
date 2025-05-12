@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "src/monitor.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "crons": [
+        {
+            "path": "/api/monitor",
+            "schedule": "*/10 * * * *"
+        }
+    ]
+}
