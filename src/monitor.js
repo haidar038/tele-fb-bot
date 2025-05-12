@@ -55,9 +55,9 @@ async function checkGroups() {
     await browser.close();
 }
 
-// Jadwalkan setiap pollIntervalMinutes
-cron.schedule(`*/${config.facebook.pollIntervalMinutes} * * * *`, () => {
-    console.log(`${new Date().toISOString()} - Running checkGroups`);
+// Jadwalkan cron sehingga berjalan maksimal 1x sehari (misal pukul 01:00)
+cron.schedule("0 1 * * *", () => {
+    console.log(`${new Date().toISOString()} - Running daily checkGroups`);
     checkGroups().catch(console.error);
 });
 
